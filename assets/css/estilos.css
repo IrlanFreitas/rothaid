@@ -6,6 +6,11 @@ body {
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-mobile-color);
+    padding: 8px 16px;
+    box-shadow: var(--shadows);
 }
 .header__menu {}
 .header__logo {}
