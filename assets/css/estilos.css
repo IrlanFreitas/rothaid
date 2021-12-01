@@ -1,0 +1,12 @@
+body {
+    background-color: var(--body-color);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--font-color);
+}
+
+.header {
+    display: flex;
+}
+.header__menu {}
+.header__logo {}
+.header__notificacao {}
