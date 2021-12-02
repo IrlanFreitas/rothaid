@@ -1,17 +1,105 @@
 body {
-    background-color: var(--body-color);
-    font-family: 'Open Sans', sans-serif;
-    color: var(--font-color);
+  background-color: var(--body-color);
+  font-family: "Open Sans", "icones", sans-serif;
+  color: var(--font-color);
 }
 
+/** Header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--header-mobile-color);
-    padding: 8px 16px;
-    box-shadow: var(--shadows);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-mobile-color);
+  padding: 8px 16px;
+  box-shadow: var(--shadows);
 }
-.header__menu {}
-.header__logo {}
-.header__notificacao {}
+
+.header__menu i::before {
+  content: "\e904";
+  font-size: 24px;
+}
+
+.header__logo {
+  width: 40px;
+}
+
+.header__notificacao i::before {
+  content: "\e906";
+  font-size: 24px;
+}
+
+/** Side Menu */
+
+.menu-lateral {
+  /* display: none; */
+  position: absolute;
+  left: -100vw;
+  display: flex;
+  background-color: var(--side-menu-color);
+  flex-direction: column;
+  width: 75vw;
+  height: 100vh;
+  /* transition: display 0.25s; */
+  transition: left 0.25s;
+  z-index: 99;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: left .25s;
+}
+
+/* .menu-lateral--ativo {
+  display: flex;
+  transition: display 0.25s;
+} */
+
+.menu-lateral__logo {
+  width: 118px;
+  align-self: center;
+  padding: 16px;
+}
+
+.menu-lateral__link {
+  height: 64px;
+  color: var(--alt-font-color);
+  padding-left: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-lateral__link--ativo {
+  color: var(--font-color);
+  padding-left: 56px;
+  border-left: 8px solid var(--font-color);
+}
+
+.menu-lateral__link::before {
+  content: "\e900";
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  position: absolute;
+  left: 24px;
+}
+
+.menu-lateral__link--inicio::before {
+  content: "\e902";
+}
+
+.menu-lateral__link--videos::before {
+  content: "\e90e";
+}
+
+.menu-lateral__link--picos::before {
+  content: "\e909";
+}
+.menu-lateral__link--integracoes::before {
+  content: "\e903";
+}
+.menu-lateral__link--camisas::before {
+  content: "\e900";
+}
+.menu-lateral__link--pinturas::before {
+  content: "\e90a";
+}

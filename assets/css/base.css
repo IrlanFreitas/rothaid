@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
 :root {
     --body-color: #1D232A;
     --header-color: #1D232A;
